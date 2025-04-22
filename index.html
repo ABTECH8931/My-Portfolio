@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing web development projects, skills, and contact information. Explore my work in HTML, CSS, JavaScript, and more.">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="images/brand-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="images/brand-logo.png" alt="My Logo" class="navbar-logo">
+            </a>
+
+            <div class="d-flex align-items-center">
+                <button class="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="navbar-toggler mobile-menu-toggle" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="desktop-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="profile-pic">
+                <img src="images/brand-logo.png" alt="Hero image" class="Hero image">
+            </div>
+            <button class="close-menu-btn" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <button class="mobile-theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span>Toggle Theme</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="title-line">I'm a <span class="changing-text" data-words='["Full Stack Developer", "Graphic Designer", "Creative Coder"]'>Full Stack Developer</span></span>
+                        </h1>
+                        <p class="hero-subtitle">Crafting beautiful digital experiences through code and design...</p>
+                        <div class="hero-tags">
+                            <span class="tag">Development</span>
+                            <span class="tag">Design</span>
+                        </div>
+                        <br>
+                        <a href="downloads/my-cv.pdf" class="btn btn-outline" download="My_CV.pdf">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image">
+                            <img src="images/hero.jpeg" alt="Hero image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">A combination of development and design skills to create comprehensive digital solutions.</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> HTML/CSS</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> Django</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> SQLite</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-database"></i> MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>APIs</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li><i class="fas fa-paint-brush"></i> Adobe Suite</li>
+                        <li><i class="fas fa-search"></i> User Research</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Creative</h3>
+                    <ul>
+                        <li><i class="fas fa-paint-brush"></i> Photoshop</li>
+                        <li><i class="fas fa-paint-brush"></i> Illustrator</li>
+                        <li><i class="fas fa-paint-brush"></i> InDesign</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <img src="images/job-board.jpeg" alt="Job Board">
+                    </div>
+                    <div class="project-content">
+                        <h3>Job Board Project</h3>
+                        <p>Full-stack job board solution with Django</p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>SQLite</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a href="https://job-app-8rny.onrender.com" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <img src="images/food-ordering.jpeg" alt="Food Ordering">
+                    </div>
+                    <div class="project-content">
+                        <h3>Food Ordering Project</h3>
+                        <p>Full-stack food ordering solution with Django</p>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>SQLite</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a href="https://food-ordering-i1t7.onrender.com" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <img src="images/travel-tour.PNG" alt="Travel & Tour">
+                    </div>
+                    <div class="project-content">
+                        <h3>Travel & Tour Project</h3>
+                        <p>Front-end travel & tour solution with JavaScript</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://travel-tour-0sxn.onrender.com" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="development">
+                    <div class="project-image">
+                        <img src="images/quiz.PNG" alt="Quiz">
+                    </div>
+                    <div class="project-content">
+                        <h3>Quiz Project</h3>
+                        <p>Front-end Quiz solution with JavaScript</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://test-quiz-wr14.onrender.com" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="images/Chedox.jpg" alt="Chedox">
+                    </div>
+                    <div class="project-content">
+                        <h3>Brand Marketing</h3>
+                        <p>Brand marketing package for a startup</p>
+                        <div class="project-tags">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>Branding</span>
+                        </div>
+                        <a href="https://www.behance.net/gallery/224183761/Chedox" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="images/air-pods.jpg" alt="Air-pod">
+                    </div>
+                    <div class="project-content">
+                        <h3>Advertising</h3>
+                        <p>Air-Pod advertising design</p>
+                        <div class="project-tags">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                        </div>
+                        <a href="https://www.behance.net/gallery/224183943/Air-Pod" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="images/hero-img.jpg" alt="About Me">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-content">
+                        <p>I'm a passionate Full Stack Developer and Graphic Designer with 2+ years of experience in creating beautiful and functional digital experiences. I combine technical expertise with creative design thinking to deliver outstanding results.</p>
+                        <p>My journey in both development and design has equipped me with a unique perspective that allows me to bridge the gap between aesthetics and functionality, ensuring that every project I work on is both beautiful and performant.</p>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                            <a href="downloads/my-cv.pdf" class="btn btn-outline" download="My_CV.pdf">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Let's discuss your next project and bring your ideas to life</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:abrahamefe307@gmail.com">abrahamefe307@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+2348058183143">+234 805 818 3143</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formMessage" class="form-submission-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="navbar-brand">
+                        <img src="images/brand-logo.png" alt="My Logo" class="navbar-logo">
+                    </a>
+                    <p>Crafting beautiful digital experiences through code and design</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/ABTECH8931"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.behance.net/abrahamefetobo"><i class="fab fa-behance"></i></a>
+                        <a href="https://x.com/_AB_TECH?t=9tdbHvvETNk6iHQOsm5qPQ&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61573390545469"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
